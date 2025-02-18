@@ -12,12 +12,16 @@ from torch.utils.data import DataLoader, Dataset
          
 class RMSNorm(nn.Module):
     def __init__(self, d_model, eps=1e-5):
+        """
+        Root Mean Square Layer Normalization (RMSNorm)
+        """
         super().__init__()
         self.eps = eps
-        self.weight = nn.Parameter(torch.ones(d_model))
+        self.gamma = nn.Parameter(torch.ones(d_model)) # Learnable Scale
         
     def forward(self, x):
-        return x * torch.rsqrt(x.pow(2).mean(-1, keepdim=True) + self.eps) * self.weight         
+        rms = torch.rsqrt(x.pow(2).mean(-1, keepdim=True) + self.eps) # Compute RMS
+        return x * rms * self.gamma
         
 class LocalConv(nn.Module):
     def __init__(self, d_model, kernel_size=4, conv_bias=True): 
