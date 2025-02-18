@@ -2,12 +2,12 @@
 
 Implementing core deep learning concepts from the ground up.
 
-## 🎯 Models Implemented
+## Models Implemented
 
-- **Diffusion Models**: State-of-the-art generative models for high-quality image synthesis
-- **MAMBA**: Modern state-space architecture for efficient sequence modeling
+- **Diffusion Models**: Generative models for high-quality image synthesis
+- **MAMBA**: Selective state-space architecture for efficient sequence modeling
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 DeepLearning-From-Scratch/
@@ -18,7 +18,7 @@ DeepLearning-From-Scratch/
 └── .gitignore           # Git ignore rules
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 1. Clone the repository:
 ```bash
@@ -31,15 +31,12 @@ cd deep-learning-from-scratch
 pip install -r requirements.txt
 ```
 
-## 📚 Documentation
+## Documentation
 
 Each implementation includes detailed documentation:
 
 - [Diffusion Models](./diffusion_models/)
 - [MAMBA](./mamba/)
 
-## 📝 License
-
-MIT License
 
 
