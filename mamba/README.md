@@ -33,7 +33,7 @@ cd mamba
 python run_mamba.py
 ```
 
-## 📝 Documentation
+## Documentation
 For a detailed explanation of Mamba and implementation details, check out my [technical blog post](https://pranaval.github.io/Projects/project2.html).
 
 
